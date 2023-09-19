@@ -28,7 +28,7 @@ window.addEventListener("touchstart", e => {
   } 
 });
 
-const form = document.querySelector('form');
+const form = document.querySelector('#contact');
 
 form.addEventListener("submit", e => {
     e.preventDefault();
@@ -60,9 +60,6 @@ form.addEventListener("submit", e => {
         emailErr.innerText = "";
     }
     if (!Object.keys(err).length > 0){
-        document.addEventListener('DOMContentLoaded', function () {
-            var form = document.querySelector('form');
-            form.submit();
-        });
+        form.submit();
     } 
     });
