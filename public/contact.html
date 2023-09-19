@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="mt-5 lg:col-start-3 lg:col-span-8 lg:mt-12">
-              <form id="form">
+              <form id="form" method="post">
                 <div class="overflow-hidden shadow-lg sm:rounded-md">
                   <div class="px-4 py-5 sm:p-6">
                     <div class="grid grid-cols-6 gap-6">
@@ -130,8 +130,6 @@
                     </div>
                   </div>
                   <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
-                    <span id="success" class="bg-green-500 text-white py-2 px-4 mr-6 rounded hidden">Sent successfully!</span>
-                    <span id="fail" class="bg-red-500 text-white py-2 px-4 mr-6 rounded hidden">Failed to send!</span>
                     <button id="submit" type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Send</button>
                   </div>
                 </div>
@@ -142,19 +140,8 @@
       </div>
     </section>
   </main>
-
-<div id="loader" class="h-screen w-screen z-50 bg-gray-800/80 fixed top-0 left-0 text-center justify-center hidden">
-  <i class="text-7xl text-teal-300 animate-spin fa-solid fa-spinner relative top-1/2"></i>
-</div>
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
-   (function(){
-      emailjs.init("Y5PtdUWEksa_mOVk2");
-   })();
-
-   const form = document.querySelector("#form");
+const form = document.querySelector("#form");
 
 form.addEventListener("submit", e => {
     e.preventDefault();
@@ -186,33 +173,9 @@ form.addEventListener("submit", e => {
         emailErr.innerText = "";
     }
     if (!Object.keys(err).length > 0){
-        let templateParams = {
-            fname : fname,
-            lname : lname,
-            email : email,
-            phone : phone,
-            contactMethod : contactMethod,
-            subject : subject,
-            address : address,
-        }
-        
-        const loader = document.querySelector("#loader");
-        const success = document.querySelector("#success");
-        const fail = document.querySelector("#fail");
-        const submit = document.querySelector("#submit");
-
-        loader.classList.remove("hidden");
-        emailjs.send('service_0j957un', 'template_0qklrj3', templateParams).then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        loader.classList.add("hidden");
-        success.classList.remove("hidden");
-        submit.setAttribute("disabled", "");
-        }, function(error) {
-          loader.classList.remove("hidden");
-          fail.classList.remove("hidden");
-        });
+        form.submit();
     } 
-})
+    })
 </script>
 <script src="index.js"></script>
 </body>
