@@ -8,7 +8,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-  
   },
   "scripts": {
     "tailwind": "npx tailwindcss -i input.css -o ./public/output.css --watch"
