@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WEF2VH94JY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WEF2VH94JY');
+</script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+  <!-- Twitter tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ethanjmarchand" />
+  <meta name="twitter:title" content="K2 Realty" />
+  <meta name="twitter:description" content="Free Evaluations. Free Advice." />
+  <meta name="twitter:image" content="https://k2r.ca/images/k2whiteonred3.png" />
+  <meta name="twitter:creator" content="@ethanjmarchand" />
+  <meta name="twitter:image:alt" content="K2 Realty Logo" />
+  <!-- og tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="K2 Realty" />
+  <meta property="og:description" content="Free Evaluations. Free Advice." />
+  <meta property="og:url" content="https://k2r.ca/" />
+  <meta property="og:image" content="images/k2whiteonred3.png" />
+  <!-- css -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="output.css">
+  <title>K2 Realty Corporation</title>
+  <meta name="description" content="Reach out for more information. All advice is free."/>
+  <script src="https://kit.fontawesome.com/2d2042756f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <i id="menubtn" class="cursor-pointer fa-solid fa-bars fixed top-5 right-5 text-3xl lg:invisible text-black"></i>
+  <nav id="navbar" class="-ml-52 lg:ml-0 overflow-y-auto fixed h-full bg-[#c10c0aff] w-52 transition-all overflow-hidden shadow-[5px_0px_20px_0px_rgba(0,0,0,0.5)]">
+    <a href="/"><img class="w-32 m-auto my-8" src="images/k2whiteontransparent.png" alt="K2 Realty logo"></a>
+    <div class="flex flex-col p-6">
+      <a class="hover:bg-red-500 hover:shadow-lg mb-2 text-xl text-zinc-100 pl-3 rounded" href="/">Home</a>
+      <a class="hover:bg-red-500 hover:shadow-lg mb-2 text-xl text-zinc-100 pl-3 rounded" href="/buying.html">Buying</a>
+      <a class="hover:bg-red-500 hover:shadow-lg mb-2 text-xl text-zinc-100 pl-3 rounded" href="/selling.html">Selling</a>
+      <a class="hover:bg-red-500 hover:shadow-lg mb-2 text-xl text-zinc-100 pl-3 rounded" href="/commercial.html">Commercial</a>
+      <a class="hover:bg-red-500 hover:shadow-lg mb-2 text-xl text-zinc-100 pl-3 rounded" href="/agents.html">Agents</a>
+      <a class="mb-2 text-xl text-white bg-red-600 pl-3 rounded" href="#">Contact</a>
+    </div>
+    <div>
+      <a class="block text-zinc-200 my-4 mx-6 hover:text-white" href="tel:780-900-3777"><i class="fa-solid fa-phone pr-4"></i>780-900-3777</a>
+      <a class="block text-zinc-200 mt-4 mb-12 mx-6 hover:text-white" href="mailto:info@k2r.ca"><i class="fa-solid fa-envelope pr-4"></i>info@k2r.ca</a>
+    </div>
+    <div class="text-gray-800 text-center text-3xl">
+      <!-- <a href=""><i class="p-2 mt-12 hover:text-blue-400 fa-brands fa-twitter"></i></a> -->
+      <a href="https://www.facebook.com/k2realtycorp"><i class="p-2 hover:text-blue-700 fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/EthanJMarchand"><i class="p-2 hover:text-blue-700 fa-brands fa-x-twitter"></i></a>
+    </div>
+    <p class="text-white text-center pt-16" >Copyright© K2 Realty</p>
+  </nav>
+  <main class="">
+    <section class="lg:pl-52 min-h-screen">
+      <div class="container mx-auto p-6 border-b-2 pb-20">
+        <h1 class="border-b-2 text-center text-3xl mt-14 mb-8 pb-8 font-bold">Contact</h1>
+        <div class="mt-10 sm:mt-0">
+          <div class="lg:grid lg:grid-cols-12 lg:gap-6">
+            <div class="lg:col-start-3 col-span-8">
+              <div class="px-4 sm:px-0">
+                <h3 class="text-base font-semibold leading-6 text-gray-900">Request a text, call or email back.</h3>
+                <p class="mt-1 text-sm text-gray-600">We usually respond within minutes. We will never sell your information, cold call, or spam you.</p>
+              </div>
+            </div>
+            <div class="mt-5 lg:col-start-3 lg:col-span-8 lg:mt-12">
+              <form id="form">
+                <div class="overflow-hidden shadow-lg sm:rounded-md">
+                  <div class="px-4 py-5 sm:p-6">
+                    <div class="grid grid-cols-6 gap-6">
+                      <div class="col-span-6 md:col-span-3">
+                        <label for="fname" class="block text-sm font-medium text-gray-700">First name</label>
+                        <input type="text" name="fname" id="fname" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        <span class="text-red-500 text-xs" id="fnameErr"></span>
+                      </div>
+                      <div class="col-span-6 md:col-span-3">
+                        <label for="lname" class="block text-sm font-medium text-gray-700">Last name</label>
+                        <input type="text" name="lname" id="lname" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                      </div>
+                      <div class="col-span-6">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="text" name="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        <span class="text-red-500 text-xs" id="emailErr"></span>
+                      </div>
+                      <div class="col-span-6">
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Mobile</label>
+                        <input type="text" name="phone" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                      </div>
+                      <div class="col-span-6">
+                        <label for="contactMethod" class="block text-sm font-medium text-gray-700">Preferred Contact Method</label>
+                        <select id="contactMethod" name="contactMethod" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                          <option disabled selected value> -- select an option -- </option>
+                          <option>Text</option>
+                          <option>Call</option>
+                          <option>Email</option>
+                        </select>
+                      </div>
+                      <div class="col-span-6">
+                        <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                        <select id="subject" name="subject" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                          <option disabled selected value> -- select an option -- </option>
+                          <option>Buying a property</option>
+                          <option>Selling a property</option>
+                          <option>Comparative Market Analysis</option>
+                          <option>Commercial Real Estate</option>
+                          <option>Licensing inquiry</option>
+                          <option>General inquiry</option>
+                        </select>
+                      </div>
+                      <div class="col-span-6">
+                        <label for="address" class="block text-sm font-medium text-gray-700">Address for Comparative Market Analysis</label>
+                        <input type="text" name="address" id="address" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Optional">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                    <span id="success" class="bg-green-500 text-white py-2 px-4 mr-6 rounded hidden">Sent successfully!</span>
+                    <span id="fail" class="bg-red-500 text-white py-2 px-4 mr-6 rounded hidden">Failed to send!</span>
+                    <button id="submit" type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<div id="loader" class="h-screen w-screen z-50 bg-gray-800/80 fixed top-0 left-0 text-center justify-center hidden">
+  <i class="text-7xl text-teal-300 animate-spin fa-solid fa-spinner relative top-1/2"></i>
+</div>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+   (function(){
+      emailjs.init("Y5PtdUWEksa_mOVk2");
+   })();
+
+   const form = document.querySelector("#form");
+
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    
+    const fname = form.fname.value.trim();
+    const fnameErr = form.querySelector("#fnameErr");
+    const lname = form.lname.value.trim();
+    const email = form.email.value.trim();
+    const emailErr = form.querySelector("#emailErr");
+    const phone = form.phone.value.trim();
+    const contactMethod = form.contactMethod.value.trim();
+    const subject = form.subject.value.trim();
+    const address = form.address.value.trim();
+   
+    const err = {};
+    
+    if (fname.length < 2){
+        err.fname = "First name is missing";
+        fnameErr.innerText = err.fname
+    } else {
+        delete err.fname;
+        fnameErr.innerText = "";
+    }
+    if (email.length < 6 || !email.includes("@") || !email.includes(".")){
+        err.email = "Valid email is missing";
+        emailErr.innerText = err.email;
+    } else {
+        delete err.email;
+        emailErr.innerText = "";
+    }
+    if (!Object.keys(err).length > 0){
+        let templateParams = {
+            fname : fname,
+            lname : lname,
+            email : email,
+            phone : phone,
+            contactMethod : contactMethod,
+            subject : subject,
+            address : address,
+        }
+        
+        const loader = document.querySelector("#loader");
+        const success = document.querySelector("#success");
+        const fail = document.querySelector("#fail");
+        const submit = document.querySelector("#submit");
+
+        loader.classList.remove("hidden");
+        emailjs.send('service_0j957un', 'template_0qklrj3', templateParams).then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        loader.classList.add("hidden");
+        success.classList.remove("hidden");
+        submit.setAttribute("disabled", "");
+        }, function(error) {
+          loader.classList.remove("hidden");
+          fail.classList.remove("hidden");
+        });
+    } 
+})
+</script>
+<script src="index.js"></script>
+</body>
+</html>
