@@ -62,7 +62,7 @@ form.addEventListener("submit", e => {
     if (!Object.keys(err).length > 0){
         document.addEventListener('DOMContentLoaded', function () {
             var form = document.querySelector('form');
-            form.submit;
+            form.submit();
         });
     } 
     });
