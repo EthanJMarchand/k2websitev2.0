@@ -60,6 +60,6 @@ form.addEventListener("submit", e => {
         emailErr.innerText = "";
     }
     if (!Object.keys(err).length > 0){
-        form.submit();
+        document.querySelector("#contact").submit();
     } 
     });
