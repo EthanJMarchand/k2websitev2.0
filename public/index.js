@@ -28,20 +28,20 @@ window.addEventListener("touchstart", e => {
   } 
 });
 
-const form = document.querySelector("#contact");
+const form = document.querySelector('form');
 
 form.addEventListener("submit", e => {
     e.preventDefault();
     
     const fname = form.fname.value.trim();
     const fnameErr = form.querySelector("#fnameErr");
-    const lname = form.lname.value.trim();
+    // const lname = form.lname.value.trim();
     const email = form.email.value.trim();
     const emailErr = form.querySelector("#emailErr");
-    const phone = form.phone.value.trim();
-    const contactMethod = form.contactMethod.value.trim();
-    const subject = form.subject.value.trim();
-    const address = form.address.value.trim();
+    // const phone = form.phone.value.trim();
+    // const contactMethod = form.contactMethod.value.trim();
+    // const subject = form.subject.value.trim();
+    // const address = form.address.value.trim();
    
     const err = {};
     
@@ -60,6 +60,9 @@ form.addEventListener("submit", e => {
         emailErr.innerText = "";
     }
     if (!Object.keys(err).length > 0){
-        document.querySelector("#contact").submit();
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.querySelector('form');
+            form.submit;
+        });
     } 
     });
