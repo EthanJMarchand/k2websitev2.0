@@ -31,7 +31,6 @@ window.addEventListener("touchstart", e => {
 const form = document.querySelector('#contact');
 
 form.addEventListener("submit", e => {
-    e.preventDefault();
     
     const fname = form.fname.value.trim();
     const fnameErr = form.querySelector("#fnameErr");
@@ -59,7 +58,7 @@ form.addEventListener("submit", e => {
         delete err.email;
         emailErr.innerText = "";
     }
-    if (!Object.keys(err).length > 0){
-        form.submit();
+    if (Object.keys(err).length > 0){
+        e.preventDefault();
     } 
     });
