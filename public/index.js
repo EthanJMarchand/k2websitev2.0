@@ -27,3 +27,39 @@ window.addEventListener("touchstart", e => {
     menu.classList.add("fa-bars");
   } 
 });
+
+const form = document.querySelector("#contact");
+
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    
+    const fname = form.fname.value.trim();
+    const fnameErr = form.querySelector("#fnameErr");
+    const lname = form.lname.value.trim();
+    const email = form.email.value.trim();
+    const emailErr = form.querySelector("#emailErr");
+    const phone = form.phone.value.trim();
+    const contactMethod = form.contactMethod.value.trim();
+    const subject = form.subject.value.trim();
+    const address = form.address.value.trim();
+   
+    const err = {};
+    
+    if (fname.length < 2){
+        err.fname = "First name is missing";
+        fnameErr.innerText = err.fname
+    } else {
+        delete err.fname;
+        fnameErr.innerText = "";
+    }
+    if (email.length < 6 || !email.includes("@") || !email.includes(".")){
+        err.email = "Valid email is missing";
+        emailErr.innerText = err.email;
+    } else {
+        delete err.email;
+        emailErr.innerText = "";
+    }
+    if (!Object.keys(err).length > 0){
+        form.submit();
+    } 
+    });
